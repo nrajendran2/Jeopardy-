@@ -12,6 +12,18 @@ The game will also store the previous scores, so when you achieve a new high sco
 
 Trello board: https://trello.com/b/JwLJ10Y6/jeproady-game
 
-![preview](https://github.com/nrajendran2/Jeopardy-/blob/master/Images/IMG_2249%202.JPG)
+![first image](https://github.com/nrajendran2/Jeopardy-/blob/master/Images/IMG_2249%202.JPG)
+
+![second image](https://github.com/nrajendran2/Jeopardy-/blob/master/Images/IMG_2249.JPG)
+
+![third image](https://github.com/nrajendran2/Jeopardy-/blob/master/Images/IMG_2250.JPG)
+
+![fourth image](https://github.com/nrajendran2/Jeopardy-/blob/master/Images/IMG_2251.JPG)
 
 
+Technologies used:
+Jquery
+Materialized
+Trello
+
+Bitballon - http://distracted-mcclintock-e93dc4.bitballoon.com/
