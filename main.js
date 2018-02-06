@@ -286,6 +286,9 @@ $('#moviesthree').click(function () {
         totalPoints -= 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#moviesthree").removeClass('question')
+    $('#moviesthree').addClass('question2')
+    
 })
 
 $('#moviesfour').click(function () {
@@ -299,6 +302,9 @@ $('#moviesfour').click(function () {
         totalPoints -= 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#moviesfour").removeClass('question')
+    $('#moviesfour').addClass('question2')
+    
 })
 
 $('#moviesfive').click(function () {
@@ -312,6 +318,9 @@ $('#moviesfive').click(function () {
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#moviesfive").removeClass('question')
+    $('#moviesfive').addClass('question2')
+    
 })
 
 $('.finalquestion').click(function () {
@@ -325,6 +334,10 @@ $('.finalquestion').click(function () {
         totalPoints -= 1000;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+
+    $(".finalquestion").removeClass('question')
+    $('.finalquestion').addClass('question2')
+    
 })
 
 
