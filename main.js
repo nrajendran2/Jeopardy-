@@ -199,13 +199,16 @@ $('#musicone').click(function () {
         alert("Correct, +100")
         totalPoints += 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#musicone").removeClass('question')
+    $('#musicone').addClass('question3')
     } else {
         alert("Sorry, wrong answer -100")
         totalPoints -= 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
-    }
-    $("#musicone").removeClass('question')
+        $("#musicone").removeClass('question')
     $('#musicone').addClass('question2')
+    }
+    
 
 })
 
