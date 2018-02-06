@@ -111,6 +111,8 @@ $('#historytwo').click(function () {
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#historytwo").removeClass('question')
+    $('#historytwo').addClass('question2')
 })
 
 $('#historythree').click(function () {
@@ -124,6 +126,8 @@ $('#historythree').click(function () {
         totalPoints -= 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#historythree").removeClass('question')
+    $('#historythree').addClass('question2')
 })
 
 $('#historyfour').click(function () {
@@ -137,6 +141,9 @@ $('#historyfour').click(function () {
         totalPoints -= 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+
+    $("#historyfour").removeClass('question')
+    $('#historyfour').addClass('question2')
 })
 
 $('#historyfive').click(function () {
@@ -150,6 +157,8 @@ $('#historyfive').click(function () {
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#historyfive").removeClass('question')
+    $('#historyfive').addClass('question2')
 })
 $('#musicone').click(function () {
     let answer = prompt("Sings hit me baby one more time ")
