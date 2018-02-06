@@ -34,6 +34,9 @@ $('#two').click(function () {
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#two").removeClass('question')
+        $('#two').addClass('question2')
+
 })
 
 $('#three').click(function () {
@@ -47,6 +50,8 @@ $('#three').click(function () {
         totalPoints -= 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#three").removeClass('question')
+    $('#three').addClass('question2')
 })
 
 $('#four').click(function () {
@@ -60,6 +65,8 @@ $('#four').click(function () {
         totalPoints -= 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#four").removeClass('question')
+    $('#four').addClass('question2')
 })
 
 $('#five').click(function () {
@@ -73,6 +80,8 @@ $('#five').click(function () {
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#five").removeClass('question')
+    $('#five').addClass('question2')
 })
 
 $('#historyone').click(function () {
@@ -86,6 +95,9 @@ $('#historyone').click(function () {
         totalPoints -= 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#historyone").removeClass('question')
+    $('#historyone').addClass('question2')
+
 })
 
 $('#historytwo').click(function () {
