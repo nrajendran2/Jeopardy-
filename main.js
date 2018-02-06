@@ -200,6 +200,18 @@ $('#musicfive').click(function () {
     }
 })
 
+$('#moviesone').click(function () {
+    let answer = prompt("Movie about toys that come alive, led by a cowoboy and astrouant")
+    if (answer === "Toy Story" || answer === "toy story") {
+        alert("Correct, +100")
+        totalPoints += 100;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -100")
+        totalPoints -= 100;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
 
 
 
