@@ -3,7 +3,7 @@
 
 let totalPoints = 0;
 $(() => {
-    $('#one').click(function () {
+    $('#one').one("click",function () {
         console.log("this worked")
         let answer = prompt("Quarterback whom has won 5 Super Bowls with the Patriots  _____.")
         if (answer === "Tom Brady" || answer === "tom brady") {
@@ -15,7 +15,12 @@ $(() => {
             totalPoints -= 100;
             $('.playerscore').html(`Score: ${totalPoints}`)
         }
+        $("#one").removeClass('question')
+        $('#one').addClass('question2')
+
+        // $('#one').attr('disabled', true);
     })
+    
 })
 
 $('#two').click(function () {
@@ -224,6 +229,7 @@ $('#moviestwo').click(function () {
         alert("Sorry, wrong answer -200")
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
+
     }
 })
 
