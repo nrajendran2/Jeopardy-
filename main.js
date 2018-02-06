@@ -174,6 +174,32 @@ $('#musicthree').click(function () {
     }
 })
 
+$('#musicfour').click(function () {
+    let answer = prompt("The third memember of Migos after Offset and Quavo Huncho  ")
+    if (answer === "takeoff" || answer === "Takeoff") {
+        alert("Correct, +400")
+        totalPoints += 400;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -400")
+        totalPoints -= 400;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
+
+$('#musicfive').click(function () {
+    let answer = prompt("His song LSD was based off the movie Enter the Void ")
+    if (answer === "A$AP Rocky" || answer === "ASAP Rocky" || answer === "Rocky") {
+        alert("Correct, +500")
+        totalPoints += 500;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -500")
+        totalPoints -= 500;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
+
 
 
 
