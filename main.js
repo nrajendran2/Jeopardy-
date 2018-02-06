@@ -295,13 +295,16 @@ $('#moviesone').click(function () {
         alert("Correct, +100")
         totalPoints += 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviesone").removeClass('question')
+    $('#moviesone').addClass('question3')
     } else {
         alert("Sorry, wrong answer -100")
         totalPoints -= 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
-    }
-    $("#moviesone").removeClass('question')
+        $("#moviesone").removeClass('question')
     $('#moviesone').addClass('question2')
+    }
+    
 
 })
 
