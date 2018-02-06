@@ -7,12 +7,14 @@ h1 {
 }
 
 body {
-    background-color: white;
+    background-color: black;
 
 }
 .gameinfo{
     text-align: center;
-    color: red;
+    font-family: 'Berkshire Swash', cursive;
+    color: turquoise;
+    font-size: 18px;
 }
 
 .categories{
@@ -70,7 +72,7 @@ div{
 .finalquestion{
     display: flex;
     justify-content: center;
-    color:blue;
+    color:turquoise;
     border: solid;
     font-size: 30px;
     
@@ -80,5 +82,6 @@ div{
     font-family: 'Berkshire Swash', cursive;
 font-family: 'Righteous', cursive;
 font-family: 'Rammetto One', cursive;
-font-size: 30px;
+font-size: 20px;
+color:turquoise
 }
