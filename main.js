@@ -253,7 +253,18 @@ $('#moviesfour').click(function () {
     }
 })
 
-
+$('#moviesfive').click(function () {
+    let answer = prompt("Movie series where two roomates are Indian and Chinese")
+    if (answer === "Harold and Kumar" || answer === "harold and kumar") {
+        alert("Correct, +500")
+        totalPoints += 500;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -500")
+        totalPoints -= 500;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
 
 
 
