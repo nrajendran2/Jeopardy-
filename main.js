@@ -148,6 +148,32 @@ $('#musicone').click(function () {
 })
 
 
+$('#musictwo').click(function () {
+    let answer = prompt("First female rapper to have three songs in Apple Music top 10 ")
+    if (answer === "Bardi Cardi" || answer === "Cardi B") {
+        alert("Correct, +200")
+        totalPoints += 200;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -200")
+        totalPoints -= 200;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
+
+$('#musicthree').click(function () {
+    let answer = prompt("First platinum song was Magnolia ")
+    if (answer === "Carti" || answer === "Playboi Carti") {
+        alert("Correct, +300")
+        totalPoints += 300;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -300")
+        totalPoints -= 300;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
+
 
 
 
