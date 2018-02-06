@@ -134,6 +134,22 @@ $('#historyfive').click(function () {
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
 })
+$('#musicone').click(function () {
+    let answer = prompt("Sings hit me baby one more time ")
+    if (answer === "Brittany Spears" || answer === "brittany spears") {
+        alert("Correct, +100")
+        totalPoints += 100;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -100")
+        totalPoints -= 100;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
+
+
+
+
 
 
 
