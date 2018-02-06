@@ -10,13 +10,17 @@ $(() => {
             alert("Correct, +100")
             totalPoints += 100;
             $('.playerscore').html(`Score: ${totalPoints}`)
+            $("#one").removeClass('question')
+            $('#one').addClass('question3')
+
         } else {
             alert("Sorry, wrong answer -100")
             totalPoints -= 100;
             $('.playerscore').html(`Score: ${totalPoints}`)
+            $("#one").removeClass('question')
+            $('#one').addClass('question2')
         }
-        $("#one").removeClass('question')
-        $('#one').addClass('question2')
+       
 
         // $('#one').attr('disabled', true);
     })
@@ -173,7 +177,7 @@ $('#musicone').click(function () {
     }
     $("#musicone").removeClass('question')
     $('#musicone').addClass('question2')
-    
+
 })
 
 
@@ -190,7 +194,7 @@ $('#musictwo').click(function () {
     }
     $("#musictwo").removeClass('question')
     $('#musictwo').addClass('question2')
-    
+
 })
 
 $('#musicthree').click(function () {
@@ -206,7 +210,7 @@ $('#musicthree').click(function () {
     }
     $("#musicthree").removeClass('question')
     $('#musicthree').addClass('question2')
-    
+
 })
 
 $('#musicfour').click(function () {
@@ -222,7 +226,7 @@ $('#musicfour').click(function () {
     }
     $("#musicfour").removeClass('question')
     $('#musicfour').addClass('question2')
-    
+
 })
 
 $('#musicfive').click(function () {
@@ -238,7 +242,7 @@ $('#musicfive').click(function () {
     }
     $("#musicfive").removeClass('question')
     $('#musicfive').addClass('question2')
-    
+
 })
 
 $('#moviesone').click(function () {
@@ -254,7 +258,7 @@ $('#moviesone').click(function () {
     }
     $("#moviesone").removeClass('question')
     $('#moviesone').addClass('question2')
-    
+
 })
 
 
@@ -272,7 +276,7 @@ $('#moviestwo').click(function () {
     }
     $("#moviestwo").removeClass('question')
     $('#moviestwo').addClass('question2')
-    
+
 })
 
 $('#moviesthree').click(function () {
@@ -288,7 +292,7 @@ $('#moviesthree').click(function () {
     }
     $("#moviesthree").removeClass('question')
     $('#moviesthree').addClass('question2')
-    
+
 })
 
 $('#moviesfour').click(function () {
@@ -304,7 +308,7 @@ $('#moviesfour').click(function () {
     }
     $("#moviesfour").removeClass('question')
     $('#moviesfour').addClass('question2')
-    
+
 })
 
 $('#moviesfive').click(function () {
@@ -320,7 +324,7 @@ $('#moviesfive').click(function () {
     }
     $("#moviesfive").removeClass('question')
     $('#moviesfive').addClass('question2')
-    
+
 })
 
 $('.finalquestion').click(function () {
@@ -337,7 +341,7 @@ $('.finalquestion').click(function () {
 
     $(".finalquestion").removeClass('question')
     $('.finalquestion').addClass('question2')
-    
+
 })
 
 
