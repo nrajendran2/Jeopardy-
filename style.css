@@ -61,7 +61,7 @@ div{
     background-color:
 }
 .question{
-    border: solid;
+    border: solid blue;
     padding: 40px;
     font-size: 18px;
     background-color: salmon;
@@ -84,4 +84,8 @@ font-family: 'Righteous', cursive;
 font-family: 'Rammetto One', cursive;
 font-size: 20px;
 color:turquoise
+}
+
+.sports > h1{
+    font-size: 18px;
 }
