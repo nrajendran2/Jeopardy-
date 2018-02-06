@@ -188,6 +188,9 @@ $('#musictwo').click(function () {
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#musictwo").removeClass('question')
+    $('#musictwo').addClass('question2')
+    
 })
 
 $('#musicthree').click(function () {
@@ -201,6 +204,9 @@ $('#musicthree').click(function () {
         totalPoints -= 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#musicthree").removeClass('question')
+    $('#musicthree').addClass('question2')
+    
 })
 
 $('#musicfour').click(function () {
@@ -214,6 +220,9 @@ $('#musicfour').click(function () {
         totalPoints -= 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#musicfour").removeClass('question')
+    $('#musicfour').addClass('question2')
+    
 })
 
 $('#musicfive').click(function () {
@@ -227,6 +236,9 @@ $('#musicfive').click(function () {
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#musicfive").removeClass('question')
+    $('#musicfive').addClass('question2')
+    
 })
 
 $('#moviesone').click(function () {
@@ -240,6 +252,9 @@ $('#moviesone').click(function () {
         totalPoints -= 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
+    $("#moviesone").removeClass('question')
+    $('#moviesone').addClass('question2')
+    
 })
 
 
