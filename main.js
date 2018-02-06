@@ -219,13 +219,16 @@ $('#musictwo').click(function () {
         alert("Correct, +200")
         totalPoints += 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#musictwo").removeClass('question')
+    $('#musictwo').addClass('question3')
     } else {
         alert("Sorry, wrong answer -200")
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
-    }
-    $("#musictwo").removeClass('question')
+        $("#musictwo").removeClass('question')
     $('#musictwo').addClass('question2')
+    }
+    
 
 })
 
@@ -235,14 +238,17 @@ $('#musicthree').click(function () {
         alert("Correct, +300")
         totalPoints += 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#musicthree").removeClass('question')
+        $('#musicthree').addClass('question3')
     } else {
         alert("Sorry, wrong answer -300")
         totalPoints -= 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
-    }
-    $("#musicthree").removeClass('question')
-    $('#musicthree').addClass('question2')
+        $("#musicthree").removeClass('question')
+        $('#musicthree').addClass('question2')
 
+    }
+  
 })
 
 $('#musicfour').click(function () {
@@ -251,13 +257,16 @@ $('#musicfour').click(function () {
         alert("Correct, +400")
         totalPoints += 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#musicfour").removeClass('question')
+        $('#musicfour').addClass('question3')
     } else {
         alert("Sorry, wrong answer -400")
         totalPoints -= 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#musicfour").removeClass('question')
+        $('#musicfour').addClass('question2')
     }
-    $("#musicfour").removeClass('question')
-    $('#musicfour').addClass('question2')
+   
 
 })
 
@@ -267,13 +276,16 @@ $('#musicfive').click(function () {
         alert("Correct, +500")
         totalPoints += 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#musicfive").removeClass('question')
+    $('#musicfive').addClass('question3')
     } else {
         alert("Sorry, wrong answer -500")
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
-    }
-    $("#musicfive").removeClass('question')
+        $("#musicfive").removeClass('question')
     $('#musicfive').addClass('question2')
+    }
+    
 
 })
 
