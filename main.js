@@ -183,15 +183,15 @@ $('#historyfive').click(function () {
         totalPoints += 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#historyfive").removeClass('question')
-    $('#historyfive').addClass('question3')
+        $('#historyfive').addClass('question3')
     } else {
         alert("Sorry, wrong answer -100")
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#historyfive").removeClass('question')
-    $('#historyfive').addClass('question2')
+        $('#historyfive').addClass('question2')
     }
-    
+
 })
 $('#musicone').click(function () {
     let answer = prompt("Sings hit me baby one more time ")
@@ -200,15 +200,15 @@ $('#musicone').click(function () {
         totalPoints += 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#musicone").removeClass('question')
-    $('#musicone').addClass('question3')
+        $('#musicone').addClass('question3')
     } else {
         alert("Sorry, wrong answer -100")
         totalPoints -= 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#musicone").removeClass('question')
-    $('#musicone').addClass('question2')
+        $('#musicone').addClass('question2')
     }
-    
+
 
 })
 
@@ -220,15 +220,15 @@ $('#musictwo').click(function () {
         totalPoints += 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#musictwo").removeClass('question')
-    $('#musictwo').addClass('question3')
+        $('#musictwo').addClass('question3')
     } else {
         alert("Sorry, wrong answer -200")
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#musictwo").removeClass('question')
-    $('#musictwo').addClass('question2')
+        $('#musictwo').addClass('question2')
     }
-    
+
 
 })
 
@@ -248,7 +248,7 @@ $('#musicthree').click(function () {
         $('#musicthree').addClass('question2')
 
     }
-  
+
 })
 
 $('#musicfour').click(function () {
@@ -266,7 +266,7 @@ $('#musicfour').click(function () {
         $("#musicfour").removeClass('question')
         $('#musicfour').addClass('question2')
     }
-   
+
 
 })
 
@@ -277,15 +277,15 @@ $('#musicfive').click(function () {
         totalPoints += 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#musicfive").removeClass('question')
-    $('#musicfive').addClass('question3')
+        $('#musicfive').addClass('question3')
     } else {
         alert("Sorry, wrong answer -500")
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#musicfive").removeClass('question')
-    $('#musicfive').addClass('question2')
+        $('#musicfive').addClass('question2')
     }
-    
+
 
 })
 
@@ -296,15 +296,15 @@ $('#moviesone').click(function () {
         totalPoints += 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#moviesone").removeClass('question')
-    $('#moviesone').addClass('question3')
+        $('#moviesone').addClass('question3')
     } else {
         alert("Sorry, wrong answer -100")
         totalPoints -= 100;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#moviesone").removeClass('question')
-    $('#moviesone').addClass('question2')
+        $('#moviesone').addClass('question2')
     }
-    
+
 
 })
 
@@ -315,14 +315,17 @@ $('#moviestwo').click(function () {
         alert("Correct, +200")
         totalPoints += 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviestwo").removeClass('question')
+        $('#moviestwo').addClass('question3')
     } else {
         alert("Sorry, wrong answer -200")
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviestwo").removeClass('question')
+        $('#moviestwo').addClass('question2')
 
     }
-    $("#moviestwo").removeClass('question')
-    $('#moviestwo').addClass('question2')
+
 
 })
 
@@ -332,13 +335,16 @@ $('#moviesthree').click(function () {
         alert("Correct, +300")
         totalPoints += 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviesthree").removeClass('question')
+        $('#moviesthree').addClass('question3')
     } else {
         alert("Sorry, wrong answer -300")
         totalPoints -= 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviesthree").removeClass('question')
+        $('#moviesthree').addClass('question2')
     }
-    $("#moviesthree").removeClass('question')
-    $('#moviesthree').addClass('question2')
+
 
 })
 
@@ -348,13 +354,16 @@ $('#moviesfour').click(function () {
         alert("Correct, +400")
         totalPoints += 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviesfour").removeClass('question')
+        $('#moviesfour').addClass('question3')
     } else {
         alert("Sorry, wrong answer -400")
         totalPoints -= 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviesfour").removeClass('question')
+        $('#moviesfour').addClass('question2')
     }
-    $("#moviesfour").removeClass('question')
-    $('#moviesfour').addClass('question2')
+
 
 })
 
@@ -364,13 +373,16 @@ $('#moviesfive').click(function () {
         alert("Correct, +500")
         totalPoints += 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviesfive").removeClass('question')
+        $('#moviesfive').addClass('question3')
     } else {
         alert("Sorry, wrong answer -500")
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#moviesfive").removeClass('question')
+        $('#moviesfive').addClass('question2')
     }
-    $("#moviesfive").removeClass('question')
-    $('#moviesfive').addClass('question2')
+  
 
 })
 
