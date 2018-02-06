@@ -61,7 +61,7 @@ div{
     background-color:
 }
 .question{
-    border: solid blue;
+    border: solid black;
     padding: 40px;
     font-size: 18px;
     background-color: salmon;
@@ -87,5 +87,16 @@ color:turquoise
 }
 
 .sports > h1{
-    font-size: 18px;
+    font-size: 24px;
 }
+.history > h1{
+    font-size: 24px;
+}
+
+.music > h1{
+    font-size: 24px;
+}
+.movies > h1{
+    font-size: 24px;
+}
+
