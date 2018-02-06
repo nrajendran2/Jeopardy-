@@ -214,11 +214,44 @@ $('#moviesone').click(function () {
 })
 
 
+$('#moviestwo').click(function () {
+    let answer = prompt("Two grown men suddendly become brothers")
+    if (answer === "StepBrothers" || answer === "stepbrothers" || answer === "Stepbrothers") {
+        alert("Correct, +200")
+        totalPoints += 200;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -200")
+        totalPoints -= 200;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
 
+$('#moviesthree').click(function () {
+    let answer = prompt("Top grossing movie in 2012")
+    if (answer === "The Dark Knight" || answer === "the dark knight") {
+        alert("Correct, +300")
+        totalPoints += 300;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -300")
+        totalPoints -= 300;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
 
-
-
-
+$('#moviesfour').click(function () {
+    let answer = prompt("Actor who passed in the midst of recording the seventh sequel ")
+    if (answer === "Paul Walker" || answer === "paul walker") {
+        alert("Correct, +400")
+        totalPoints += 400;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -400")
+        totalPoints -= 400;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
 
 
 
