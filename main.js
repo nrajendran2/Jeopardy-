@@ -20,7 +20,7 @@ $(() => {
             $("#one").removeClass('question')
             $('#one').addClass('question2')
         }
-       
+
 
         // $('#one').attr('disabled', true);
     })
@@ -33,13 +33,17 @@ $('#two').click(function () {
         alert("Correct, +200")
         totalPoints += 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#two").removeClass('question')
+        $('#two').addClass('question3')
+
     } else {
         alert("Sorry, wrong answer -200")
         totalPoints -= 200;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#two").removeClass('question')
+        $('#two').addClass('question2')
     }
-    $("#two").removeClass('question')
-    $('#two').addClass('question2')
+
 
 })
 
@@ -49,13 +53,16 @@ $('#three').click(function () {
         alert("Correct, +300")
         totalPoints += 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#three").removeClass('question')
+        $('#three').addClass('question3')
     } else {
         alert("Sorry, wrong answer -300")
         totalPoints -= 300;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#three").removeClass('question')
+        $('#three').addClass('question2')
     }
-    $("#three").removeClass('question')
-    $('#three').addClass('question2')
+
 })
 
 $('#four').click(function () {
@@ -64,6 +71,8 @@ $('#four').click(function () {
         alert("Correct, +400")
         totalPoints += 400;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#four").removeClass('question')
+        $('#four').addClass('question3')
     } else {
         alert("Sorry, wrong answer -400")
         totalPoints -= 400;
@@ -79,13 +88,17 @@ $('#five').click(function () {
         alert("Correct, +500")
         totalPoints += 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#five").removeClass('question')
+        $('#five').addClass('question3')
     } else {
         alert("Sorry, wrong answer -500")
         totalPoints -= 500;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $("#five").removeClass('question')
+        $('#five').addClass('question2')
     }
-    $("#five").removeClass('question')
-    $('#five').addClass('question2')
+
+
 })
 
 $('#historyone').click(function () {
