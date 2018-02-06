@@ -382,7 +382,7 @@ $('#moviesfive').click(function () {
         $("#moviesfive").removeClass('question')
         $('#moviesfive').addClass('question2')
     }
-  
+
 
 })
 
@@ -392,14 +392,18 @@ $('.finalquestion').click(function () {
         alert("Correct, +1000")
         totalPoints += 1000;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $(".finalquestion").removeClass('question')
+        $('.finalquestion').addClass('question3')
+
     } else {
         alert("Sorry, wrong answer -1000")
         totalPoints -= 1000;
         $('.playerscore').html(`Score: ${totalPoints}`)
+        $(".finalquestion").removeClass('question')
+        $('.finalquestion').addClass('question2')
     }
 
-    $(".finalquestion").removeClass('question')
-    $('.finalquestion').addClass('question2')
+
 
 })
 
