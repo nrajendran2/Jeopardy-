@@ -22,7 +22,7 @@ $(() => {
         }
 
 
-        // $('#one').attr('disabled', true);
+        $('#one').attr('disabled', true);
     })
 
 })
