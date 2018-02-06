@@ -270,6 +270,9 @@ $('#moviestwo').click(function () {
         $('.playerscore').html(`Score: ${totalPoints}`)
 
     }
+    $("#moviestwo").removeClass('question')
+    $('#moviestwo').addClass('question2')
+    
 })
 
 $('#moviesthree').click(function () {
