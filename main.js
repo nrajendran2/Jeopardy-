@@ -266,6 +266,19 @@ $('#moviesfive').click(function () {
     }
 })
 
+$('.finalquestion').click(function () {
+    let answer = prompt("Who is the 'best rapper alive'")
+    if (answer === "Lil Wayne" || answer === "Wayne") {
+        alert("Correct, +1000")
+        totalPoints += 1000;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    } else {
+        alert("Sorry, wrong answer -1000")
+        totalPoints -= 1000;
+        $('.playerscore').html(`Score: ${totalPoints}`)
+    }
+})
+
 
 
 
