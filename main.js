@@ -452,6 +452,7 @@ showFinalQuestion();
 
 $('.finalquestion').click(function () {
     if (questionsLeft === 0) {
+    alert("Congratulations, THIS IS THE FINAL CARD!!")
         let answer = prompt("Who is the 'best rapper alive'")
         if (answer === "Lil Wayne" || answer === "Wayne") {
             alert("Correct, +1000")
