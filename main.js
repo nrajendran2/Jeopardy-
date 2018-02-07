@@ -26,8 +26,8 @@ $(() => {
 
         questionsLeft -= 1;
         $('#one').attr('disabled', true);
+        showFinalQuestion();
     })
-
 
 
 })
@@ -50,7 +50,7 @@ $('#two').one("click", function () {
     }
     questionsLeft -= 1;
     $('#two').attr('disabled', true);
-
+    showFinalQuestion();
 })
 
 
@@ -71,6 +71,7 @@ $('#three').one('click', function () {
     }
     questionsLeft -= 1;
     $('#three').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -89,10 +90,10 @@ $('#four').one('click', function () {
     }
     $("#four").removeClass('question')
     $('#four').addClass('question2')
-})
 questionsLeft -= 1;
 $('#four').attr('disabled', true);
-
+showFinalQuestion();
+})
 
 $('#five').one('click', function () {
     let answer = prompt("First homegrown player for Atlanta United ")
@@ -111,6 +112,7 @@ $('#five').one('click', function () {
     }
     questionsLeft -= 1;
     $('#five').attr('disabled', true);
+    showFinalQuestion();
 
 
 
@@ -133,6 +135,7 @@ $('#historyone').one('click', function () {
     }
     questionsLeft -= 1;
     $('#historyone').attr('disabled', true);
+    showFinalQuestion();
 
 
 })
@@ -154,6 +157,7 @@ $('#historytwo').one('click', function () {
     }
     questionsLeft -= 1;
     $('#historytwo').attr('disabled', true);
+    showFinalQuestion();
 
 
 })
@@ -175,6 +179,7 @@ $('#historythree').one('click', function () {
     }
     questionsLeft -= 1;
     $('#historythree').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -195,6 +200,7 @@ $('#historyfour').one('click', function () {
     }
     questionsLeft -= 1;
     $('#historyfour').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -215,6 +221,7 @@ $('#historyfive').one('click', function () {
     }
     questionsLeft -= 1;
     $('#historyfive').attr('disabled', true);
+    showFinalQuestion();
 
 
 })
@@ -235,6 +242,7 @@ $('#musicone').one('click', function () {
     }
     questionsLeft -= 1;
     $('#musicone').attr('disabled', true);
+    showFinalQuestion();
 
 
 })
@@ -257,6 +265,7 @@ $('#musictwo').one('click', function () {
     }
     questionsLeft -= 1;
     $('#musictwo').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -278,6 +287,7 @@ $('#musicthree').one('click', function () {
     }
     questionsLeft -= 1;
     $('#musicthree').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -298,6 +308,7 @@ $('#musicfour').one('click', function () {
     }
     questionsLeft -= 1;
     $('#musicfour').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -318,6 +329,7 @@ $('#musicfive').one('click', function () {
     }
     questionsLeft -= 1;
     $('#musicfive').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -338,6 +350,7 @@ $('#moviesone').one('click', function () {
     }
     questionsLeft -= 1;
     $('#moviesone').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -360,6 +373,7 @@ $('#moviestwo').one('click', function () {
     }
     questionsLeft -= 1;
     $('#moviestwo').attr('disabled', true);
+    showFinalQuestion();
 
 })
 
@@ -381,6 +395,8 @@ $('#moviesthree').one('click', function () {
     questionsLeft -= 1;
     $('#moviesthree').attr('disabled', true);
 
+    showFinalQuestion();
+
 })
 
 $('#moviesfour').one('click', function () {
@@ -401,6 +417,7 @@ $('#moviesfour').one('click', function () {
     questionsLeft -= 1;
     $('#moviesfour').attr('disabled', true);
 
+    showFinalQuestion();
 })
 
 $('#moviesfive').one('click', function () {
@@ -424,13 +441,15 @@ $('#moviesfive').one('click', function () {
     showFinalQuestion();
 
 })
-let showFinalQuestion = function(){
-if (questionsLeft === 0){
-$('.finalquestion').show('slow')
-
-}
+let showFinalQuestion = function () {
+    if (questionsLeft === 0) {
+        $('.finalquestion').show('slow')
+        
+    }
+    console.log("I run on the load of the page")
 }
 showFinalQuestion();
+
 $('.finalquestion').click(function () {
     if (questionsLeft === 0) {
         let answer = prompt("Who is the 'best rapper alive'")
@@ -450,7 +469,7 @@ $('.finalquestion').click(function () {
         }
     }
     //$('.finalquestion').attr('disabled', true);
-
+    
 })
 
 
