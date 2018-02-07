@@ -4,6 +4,8 @@ let questionsLeft = 20;
 let totalPoints = 0;
 $(() => {
 
+    $('.finalquestion').hide('slow')
+
     $('#one').one("click", function () {
         console.log("this worked")
         let answer = prompt("Quarterback whom has won 5 Super Bowls with the Patriots  _____.")
@@ -26,9 +28,11 @@ $(() => {
         $('#one').attr('disabled', true);
     })
 
+
+
 })
 
-$('#two').one("click",function () {
+$('#two').one("click", function () {
     let answer = prompt("The winner of the 2010 World Cup ")
     if (answer === "Spain" || answer === "spain" || answer === "Espana") {
         alert("Correct, +200")
@@ -44,12 +48,13 @@ $('#two').one("click",function () {
         $("#two").removeClass('question')
         $('#two').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#two').attr('disabled', true);
 
 })
 
 
-$('#three').one('click',function () {
+$('#three').one('click', function () {
     let answer = prompt("Last Ballon d'or winner before Lionel Messi or Cristiano Ronaldo ")
     if (answer === "KAKA" || answer === "Kaka") {
         alert("Correct, +300")
@@ -64,12 +69,12 @@ $('#three').one('click',function () {
         $("#three").removeClass('question')
         $('#three').addClass('question2')
     }
-
+    questionsLeft -= 1;
     $('#three').attr('disabled', true);
 
 })
 
-$('#four').one('click',function () {
+$('#four').one('click', function () {
     let answer = prompt("Leading Rookie of The Year candidate from Australia ")
     if (answer === "ben simmons" || answer === "Ben Simmons") {
         alert("Correct, +400")
@@ -85,11 +90,11 @@ $('#four').one('click',function () {
     $("#four").removeClass('question')
     $('#four').addClass('question2')
 })
-
+questionsLeft -= 1;
 $('#four').attr('disabled', true);
 
 
-$('#five').one('click',function () {
+$('#five').one('click', function () {
     let answer = prompt("First homegrown player for Atlanta United ")
     if (answer === "Andrew Carelton" || answer === "Carelton") {
         alert("Correct, +500")
@@ -104,14 +109,14 @@ $('#five').one('click',function () {
         $("#five").removeClass('question')
         $('#five').addClass('question2')
     }
-
+    questionsLeft -= 1;
     $('#five').attr('disabled', true);
 
 
 
 })
 
-$('#historyone').one('click',function () {
+$('#historyone').one('click', function () {
     let answer = prompt("Evil leader of the Nazis ")
     if (answer === "Adolf Hitler" || answer === "Hitler") {
         alert("Correct, +100")
@@ -126,13 +131,13 @@ $('#historyone').one('click',function () {
         $("#historyone").removeClass('question')
         $('#historyone').addClass('question2')
     }
-
+    questionsLeft -= 1;
     $('#historyone').attr('disabled', true);
 
 
 })
 
-$('#historytwo').one('click',function () {
+$('#historytwo').one('click', function () {
     let answer = prompt("Name of the bombed ship that sparked USA to enter WWII ")
     if (answer === "Pearl Harbour" || answer === "Pearl Harbor") {
         alert("Correct, +200")
@@ -147,13 +152,13 @@ $('#historytwo').one('click',function () {
         $("#historytwo").removeClass('question')
         $('#historytwo').addClass('question2')
     }
-
+    questionsLeft -= 1;
     $('#historytwo').attr('disabled', true);
 
 
 })
 
-$('#historythree').one('click',function () {
+$('#historythree').one('click', function () {
     let answer = prompt("City that USA bombed in an effort to end WW2")
     if (answer === "hiroshima" || answer === "Hiroshima") {
         alert("Correct, +300")
@@ -168,11 +173,12 @@ $('#historythree').one('click',function () {
         $("#historythree").removeClass('question')
         $('#historythree').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#historythree').attr('disabled', true);
 
 })
 
-$('#historyfour').one('click',function () {
+$('#historyfour').one('click', function () {
     let answer = prompt("The most publicly known account of a Jew during the Holocaust. Famous for her diaries ")
     if (answer === "Anne Frank" || answer === "anne frank") {
         alert("Correct, +400")
@@ -187,11 +193,12 @@ $('#historyfour').one('click',function () {
         $("#historyfour").removeClass('question')
         $('#historyfour').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#historyfour').attr('disabled', true);
 
 })
 
-$('#historyfive').one('click',function () {
+$('#historyfive').one('click', function () {
     let answer = prompt("Leader of the Soviet Union who joined the Axis Powers ")
     if (answer === "Joseph Stalin" || answer === "Stalin") {
         alert("Correct, +500")
@@ -206,11 +213,12 @@ $('#historyfive').one('click',function () {
         $("#historyfive").removeClass('question')
         $('#historyfive').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#historyfive').attr('disabled', true);
 
 
 })
-$('#musicone').one('click',function () {
+$('#musicone').one('click', function () {
     let answer = prompt("Sings hit me baby one more time ")
     if (answer === "Brittany Spears" || answer === "brittany spears") {
         alert("Correct, +100")
@@ -225,13 +233,14 @@ $('#musicone').one('click',function () {
         $("#musicone").removeClass('question')
         $('#musicone').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#musicone').attr('disabled', true);
 
 
 })
 
 
-$('#musictwo').one('click',function () {
+$('#musictwo').one('click', function () {
     let answer = prompt("First female rapper to have three songs in Apple Music top 10 ")
     if (answer === "Bardi Cardi" || answer === "Cardi B") {
         alert("Correct, +200")
@@ -246,11 +255,12 @@ $('#musictwo').one('click',function () {
         $("#musictwo").removeClass('question')
         $('#musictwo').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#musictwo').attr('disabled', true);
 
 })
 
-$('#musicthree').one('click',function () {
+$('#musicthree').one('click', function () {
     let answer = prompt("First platinum song was Magnolia ")
     if (answer === "Carti" || answer === "Playboi Carti") {
         alert("Correct, +300")
@@ -266,11 +276,12 @@ $('#musicthree').one('click',function () {
         $('#musicthree').addClass('question2')
 
     }
+    questionsLeft -= 1;
     $('#musicthree').attr('disabled', true);
 
 })
 
-$('#musicfour').one('click',function () {
+$('#musicfour').one('click', function () {
     let answer = prompt("The third memember of Migos after Offset and Quavo Huncho  ")
     if (answer === "takeoff" || answer === "Takeoff") {
         alert("Correct, +400")
@@ -285,11 +296,12 @@ $('#musicfour').one('click',function () {
         $("#musicfour").removeClass('question')
         $('#musicfour').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#musicfour').attr('disabled', true);
 
 })
 
-$('#musicfive').one('click',function () {
+$('#musicfive').one('click', function () {
     let answer = prompt("His song LSD was based off the movie Enter the Void ")
     if (answer === "A$AP Rocky" || answer === "ASAP Rocky" || answer === "Rocky") {
         alert("Correct, +500")
@@ -304,11 +316,12 @@ $('#musicfive').one('click',function () {
         $("#musicfive").removeClass('question')
         $('#musicfive').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#musicfive').attr('disabled', true);
 
 })
 
-$('#moviesone').one('click',function () {
+$('#moviesone').one('click', function () {
     let answer = prompt("Movie about toys that come alive, led by a cowoboy and astrouant")
     if (answer === "Toy Story" || answer === "toy story") {
         alert("Correct, +100")
@@ -323,12 +336,13 @@ $('#moviesone').one('click',function () {
         $("#moviesone").removeClass('question')
         $('#moviesone').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#moviesone').attr('disabled', true);
 
 })
 
 
-$('#moviestwo').one('click',function () {
+$('#moviestwo').one('click', function () {
     let answer = prompt("Two grown men suddendly become brothers")
     if (answer === "StepBrothers" || answer === "stepbrothers" || answer === "Stepbrothers") {
         alert("Correct, +200")
@@ -344,11 +358,12 @@ $('#moviestwo').one('click',function () {
         $('#moviestwo').addClass('question2')
 
     }
+    questionsLeft -= 1;
     $('#moviestwo').attr('disabled', true);
 
 })
 
-$('#moviesthree').one('click',function () {
+$('#moviesthree').one('click', function () {
     let answer = prompt("Top grossing movie in 2012")
     if (answer === "The Dark Knight" || answer === "the dark knight") {
         alert("Correct, +300")
@@ -363,12 +378,12 @@ $('#moviesthree').one('click',function () {
         $("#moviesthree").removeClass('question')
         $('#moviesthree').addClass('question2')
     }
-
+    questionsLeft -= 1;
     $('#moviesthree').attr('disabled', true);
 
 })
 
-$('#moviesfour').one('click',function () {
+$('#moviesfour').one('click', function () {
     let answer = prompt("Actor who passed in the midst of recording the seventh sequel ")
     if (answer === "Paul Walker" || answer === "paul walker") {
         alert("Correct, +400")
@@ -383,11 +398,12 @@ $('#moviesfour').one('click',function () {
         $("#moviesfour").removeClass('question')
         $('#moviesfour').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#moviesfour').attr('disabled', true);
 
 })
 
-$('#moviesfive').one('click',function () {
+$('#moviesfive').one('click', function () {
     let answer = prompt("Movie series where two roomates are Indian and Chinese")
     if (answer === "Harold and Kumar" || answer === "harold and kumar") {
         alert("Correct, +500")
@@ -402,35 +418,38 @@ $('#moviesfive').one('click',function () {
         $("#moviesfive").removeClass('question')
         $('#moviesfive').addClass('question2')
     }
+    questionsLeft -= 1;
     $('#moviesfive').attr('disabled', true);
 
+    showFinalQuestion();
+
 })
+let showFinalQuestion = function(){
+if (questionsLeft === 0){
+$('.finalquestion').show('slow')
 
-
-$('.finalquestion').attr(disabled)
-if(jeopardyboard.answer === true || false){
-$('.finalquestion').attr(enabled)
 }
+}
+showFinalQuestion();
+$('.finalquestion').click(function () {
+    if (questionsLeft === 0) {
+        let answer = prompt("Who is the 'best rapper alive'")
+        if (answer === "Lil Wayne" || answer === "Wayne") {
+            alert("Correct, +1000")
+            totalPoints += 1000;
+            $('.playerscore').html(`Score: ${totalPoints}`)
+            $(".finalquestion").removeClass('question')
+            $('.finalquestion').addClass('question3')
 
-
-$('.finalquestion').one('click',function () {
-    let answer = prompt("Who is the 'best rapper alive'")
-    if (answer === "Lil Wayne" || answer === "Wayne") {
-        alert("Correct, +1000")
-        totalPoints += 1000;
-        $('.playerscore').html(`Score: ${totalPoints}`)
-        $(".finalquestion").removeClass('question')
-        $('.finalquestion').addClass('question3')
-
-    } else {
-        alert("Sorry, wrong answer -1000")
-        totalPoints -= 1000;
-        $('.playerscore').html(`Score: ${totalPoints}`)
-        $(".finalquestion").removeClass('question')
-        $('.finalquestion').addClass('question2')
+        } else {
+            alert("Sorry, wrong answer -1000")
+            totalPoints -= 1000;
+            $('.playerscore').html(`Score: ${totalPoints}`)
+            $(".finalquestion").removeClass('question')
+            $('.finalquestion').addClass('question2')
+        }
     }
-
-$('.finalquestion').attr('disabled', true);
+    //$('.finalquestion').attr('disabled', true);
 
 })
 
