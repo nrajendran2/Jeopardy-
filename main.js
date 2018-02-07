@@ -76,16 +76,17 @@ $('#three').one('click', function () {
 })
 
 $('#four').one('click', function () {
+    alert("It's today's DAILY DOUBLE")
     let answer = prompt("Leading Rookie of The Year candidate from Australia ")
     if (answer === "ben simmons" || answer === "Ben Simmons") {
         alert("Correct, +400")
-        totalPoints += 400;
+        totalPoints += 400 * 2;
         $('.playerscore').html(`Score: ${totalPoints}`)
         $("#four").removeClass('question')
         $('#four').addClass('question3')
     } else {
         alert("Sorry, wrong answer -400")
-        totalPoints -= 400;
+        totalPoints -= 400 * -2;
         $('.playerscore').html(`Score: ${totalPoints}`)
     }
     $("#four").removeClass('question')
