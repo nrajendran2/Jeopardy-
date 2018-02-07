@@ -27,7 +27,7 @@ $(() => {
 
 })
 
-$('#two').click(function () {
+$('#two').one("click",function () {
     let answer = prompt("The winner of the 2010 World Cup ")
     if (answer === "Spain" || answer === "spain" || answer === "Espana") {
         alert("Correct, +200")
@@ -43,11 +43,12 @@ $('#two').click(function () {
         $("#two").removeClass('question')
         $('#two').addClass('question2')
     }
-
+    $('#two').attr('disabled', true);
 
 })
 
-$('#three').click(function () {
+
+$('#three').one('click',function () {
     let answer = prompt("Last Ballon d'or winner before Lionel Messi or Cristiano Ronaldo ")
     if (answer === "KAKA" || answer === "Kaka") {
         alert("Correct, +300")
@@ -63,9 +64,11 @@ $('#three').click(function () {
         $('#three').addClass('question2')
     }
 
+    $('#three').attr('disabled', true);
+
 })
 
-$('#four').click(function () {
+$('#four').one('click',function () {
     let answer = prompt("Leading Rookie of The Year candidate from Australia ")
     if (answer === "ben simmons" || answer === "Ben Simmons") {
         alert("Correct, +400")
@@ -82,7 +85,10 @@ $('#four').click(function () {
     $('#four').addClass('question2')
 })
 
-$('#five').click(function () {
+$('#four').attr('disabled', true);
+
+
+$('#five').one('click',function () {
     let answer = prompt("First homegrown player for Atlanta United ")
     if (answer === "Andrew Carelton" || answer === "Carelton") {
         alert("Correct, +500")
@@ -98,10 +104,13 @@ $('#five').click(function () {
         $('#five').addClass('question2')
     }
 
+    $('#five').attr('disabled', true);
+
+
 
 })
 
-$('#historyone').click(function () {
+$('#historyone').one('click',function () {
     let answer = prompt("Evil leader of the Nazis ")
     if (answer === "Adolf Hitler" || answer === "Hitler") {
         alert("Correct, +100")
@@ -117,10 +126,12 @@ $('#historyone').click(function () {
         $('#historyone').addClass('question2')
     }
 
+    $('#historyone').attr('disabled', true);
+
 
 })
 
-$('#historytwo').click(function () {
+$('#historytwo').one('click',function () {
     let answer = prompt("Name of the bombed ship that sparked USA to enter WWII ")
     if (answer === "Pearl Harbour" || answer === "Pearl Harbor") {
         alert("Correct, +200")
@@ -136,10 +147,12 @@ $('#historytwo').click(function () {
         $('#historytwo').addClass('question2')
     }
 
+    $('#historytwo').attr('disabled', true);
+
 
 })
 
-$('#historythree').click(function () {
+$('#historythree').one('click',function () {
     let answer = prompt("City that USA bombed in an effort to end WW2")
     if (answer === "hiroshima" || answer === "Hiroshima") {
         alert("Correct, +300")
@@ -154,10 +167,11 @@ $('#historythree').click(function () {
         $("#historythree").removeClass('question')
         $('#historythree').addClass('question2')
     }
+    $('#historythree').attr('disabled', true);
 
 })
 
-$('#historyfour').click(function () {
+$('#historyfour').one('click',function () {
     let answer = prompt("The most publicly known account of a Jew during the Holocaust. Famous for her diaries ")
     if (answer === "Anne Frank" || answer === "anne frank") {
         alert("Correct, +400")
@@ -172,11 +186,11 @@ $('#historyfour').click(function () {
         $("#historyfour").removeClass('question')
         $('#historyfour').addClass('question2')
     }
-
+    $('#historyfour').attr('disabled', true);
 
 })
 
-$('#historyfive').click(function () {
+$('#historyfive').one('click',function () {
     let answer = prompt("Leader of the Soviet Union who joined the Axis Powers ")
     if (answer === "Joseph Stalin" || answer === "Stalin") {
         alert("Correct, +500")
@@ -191,6 +205,8 @@ $('#historyfive').click(function () {
         $("#historyfive").removeClass('question')
         $('#historyfive').addClass('question2')
     }
+    $('#historyfive').attr('disabled', true);
+
 
 })
 $('#musicone').click(function () {
