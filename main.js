@@ -448,7 +448,7 @@ let showFinalQuestion = function () {
         $('.finalquestion').show('slow')
         
     }
-    console.log("I run on the load of the page")
+   
 }
 showFinalQuestion();
 
