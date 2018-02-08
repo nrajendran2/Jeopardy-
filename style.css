@@ -59,18 +59,21 @@ div{
 .jeopradyboard {
     display: flex;
     text-align: center;
-    background-color:
+    background-color: rgba(25, 25, 255, .3);
 }
-.question{
+.question {
     border: solid black;
-    padding: 40px;
+    padding: 40px 60px;
+    border-radius: 50%;
     font-size: 18px;
     background-color: salmon;
     font-family: 'Berkshire Swash', cursive;
     font-family: 'Righteous', cursive;
+   
 }
 .question2{
     border: solid black;
+    border-radius: 45%;
     padding: 40px;
     font-size: 18px;
     background-image: url("http://www.bradwalker.org/assets/images/close-button.png");
@@ -82,6 +85,7 @@ div{
 .question3{
     border: solid black;
     padding: 40px;
+    border-radius: 45%;
     font-size: 18px;
     background-image: url("https://rlv.zcache.com/green_check_mark_symbol_card-r8dede8dbb12d4d16a26eb4f2a805557d_zk9yv_324.jpg?rlvnet=1");
     background-size: 100%;
@@ -120,3 +124,6 @@ color:turquoise
     font-size: 24px;
 }
 
+.alert { 
+    font-size: 50px;
+}

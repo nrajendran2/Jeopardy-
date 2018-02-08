@@ -1,5 +1,6 @@
 
 //alert ("Hello World")
+let finalQuestion = 1;
 let questionsLeft = 20;
 let totalPoints = 0;
 $(() => {
@@ -470,6 +471,14 @@ $('.finalquestion').click(function () {
             $('.finalquestion').addClass('question2')
         }
     }
+    finalQuestion -= 1;
+   
+    let showFinalScore = function(){}
+    if(finalQuestion === 0){
+        alert(`Your final score is ${totalPoints}`)
+    }
+
+  
     //$('.finalquestion').attr('disabled', true);
     
 })
